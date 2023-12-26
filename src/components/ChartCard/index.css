@@ -1,0 +1,30 @@
+
+.chartCard{
+  position: relative;
+  background-color:#A3D7C9;
+  overflow:hidden;
+  text-align:center;
+  width: 100%;
+
+  &:before,
+  &:after{
+      content: '';
+      width: 10px;
+      height: 100%;
+      background-image: -webkit-radial-gradient(circle, #F3EFEC 3px,rgba(255,255,255,0) 3px);
+      background-image: radial-gradient(circle, #F3EFEC 3px,rgba(255,255,255,0) 3px);
+      background-position: 0 1px;
+      background-size: 6px 9px;
+      background-repeat: repeat-y;
+      position: absolute;
+      top: 0;
+      -webkit-transform: scaleY((6.8/6));
+      transform: scaleY((6.8/6));
+  }
+  &:before{
+      left: -4px;
+  }
+  &:after{
+      right:-8px;
+  }
+}
